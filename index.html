@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#171310" />
+    <meta name="description" content="Z:Chess — a modern chess room shaped by the warmth of wood and the discipline of timeless play." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/png" href="./icons/favicon.png" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Z:Chess — The Art of Strategy</title>
+  </head>
+  <body>
+    <div class="splash-screen" id="splash" aria-hidden="true">
+      <img src="./icons/icon-192.png" alt="" />
+      <div class="splash-wordmark">Z:<b>CHESS</b></div>
+      <span>THE ART OF STRATEGY</span>
+    </div>
+    <div id="app" aria-live="polite"></div>
+    <noscript><div class="noscript">Z:Chess requires JavaScript to play. Please enable JavaScript and reload.</div></noscript>
+    <script type="module" src="./src/app.js"></script>
+  <script>setTimeout(()=>document.getElementById("splash")?.remove(),1900)</script></body>
+</html>

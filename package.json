@@ -1,0 +1,26 @@
+{
+  "name": "zchess-premium",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 4173",
+    "build": "node scripts/build.mjs",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "test": "node --test",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "chess.js": "1.4.0",
+    "stockfish": "19.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "vite": "6.4.6"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}
